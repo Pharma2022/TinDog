@@ -1,0 +1,135 @@
+*, *::before,*::after{  box-sizing: border-box;
+}
+
+body,html { 
+    margin: auto;
+    padding: 0;
+     font-family: 'Poppins', sans-serif; 
+     background: #2B283A;
+    text-shadow: 0.125rem 0 '#2B283A';
+     }
+
+body,html{width: 100vw;}
+nav{
+    display: flex;
+    margin: auto;
+ 
+    align-content: center;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+.tinder{
+    display: flex;
+    margin: auto auto -1.5rem auto;
+    width: 45%; }
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
+     text-align: center;
+     color: whitesmoke;}
+     
+#tinderLogo{
+    margin:0  auto;
+    align-self: center;
+height: 2.2rem;
+margin-bottom: 0.3rem;
+}
+
+.icon{
+    height: 2rem;
+    margin:auto;    
+}
+ 
+    
+.profile{margin-left: 0;}
+.logo{justify-self: center;}
+.chat{margin-right: 0;}
+
+main{
+    display: grid;
+    grid-gap: 1rem;
+    height: 75vh; 
+    
+    margin:  auto;
+    align-content: space-evenly; 
+    }
+
+#card {
+    grid-area: 2/1/-1;
+    grid-column: 1/-1;
+    grid-row: 2;
+    height: 30rem;}
+
+.dog-img {
+    display: grid;
+    grid-row: auto auto auto auto;
+    justify-content: center;
+    padding-right:1.3rem;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.dog-info,.dog-bio{
+    grid-area: 4 / 1/-1;
+    height: fit-content; 
+    color: white;}
+
+.dog-info{
+    width: 16rem; 
+    margin: auto auto 4.25rem 0.75rem;}
+
+.dog-bio{
+    width: 100%; 
+    margin: auto auto 1.75rem 0.75rem;
+    font-weight: 400;}
+
+#like,#nope{
+    grid-area: 1/-1/1/-1;
+    font-weight: 600;
+    margin: auto auto auto 2rem;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 2.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(-30deg);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 0.25REM;
+    border:0.35rem solid transparent;
+    }
+
+#like{
+    border-image: linear-gradient(to left,#29D78A,#6EF2F2) 1 ;
+    background: linear-gradient(to left, #29D78A 0%, #6EF2F2 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+#nope{
+    border-image: linear-gradient(to left,#F9655C,#F83574) 1 ;
+    background: linear-gradient(to left, #F9655C 0%, #F83574 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+section{
+    grid-row: 3;
+    height: fit-content;
+    display: flex;
+    margin: auto;}
+
+button{
+    margin: 0.5rem;
+    border-radius: 20rem;
+    padding: 1.2rem;
+    border: none;}
+
+button img{height: 65%; }
+
+#accept-button:hover{background-color:#DBFFF4;}
+#reject-button:hover{background-color: #FFE7EF;}
+
+.hide{display: none;}
